@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black2.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Networks</h1>
+					<img data-src="../img/network.svg" alt="networks graph" width="50%" height="50%">
+				</section>
+				<section>
+					<h2>Structure</h2>
+				</section>
+
+				<section>
+					<h3>Definition</h3>
+					<p align="left">
+						<b>Network</b><br>
+						/ˈnetˌwərk/<br>
+						<em>noun</em><br>
+						<br>
+							2. A group or system of interconnected people or things.<br>
+							<em> - <a href="https://en.oxforddictionaries.com/definition/network" target="_blank">Oxford English Dictionary</a></em>
+					</p>
+				</section>
+
+				<section>
+					<h3>Parts</h3>
+					<span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; data-fragment-index="2">
+						<span class="fragment fade-out">
+							<img data-src="../img/node.svg" alt="node" width="50%" height="50%">
+								Node
+						</span>
+					</span>
+					<span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; data-fragment-index="3">
+						<span class="fragment fade-out">
+							<img data-src="../img/edge.svg" alt="edge" width="50%" height="50%">
+								Edge
+							</span>
+						</span>
+					<span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; data-fragment-index="4">
+						<span class="fragment fade-out">
+							<img data-src="../img/simpleNetwork.svg" alt="simple network graph" width="50%" height="50%">
+							Network
+						</span>
+					</span>
+					<aside class="notes">
+						The Circles = Nodes which can represent things like people, organizations, villages, countries
+						The Lines = Edges which represent the relationship or ties or links between the nodes...it can be something tangable like a road network connecting cities or intangable like a friendship
+						Together they are called a network or graph
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h3>Is this a network?</h3>
+						<img data-src="../img/quiz1.svg" alt="network graph" width="50%" height="50%">
+					</section>
+					<section>
+							<h3>NO!!!</h3>
+							<p>
+								Remember that a network needs to be <em>interconnected</em>.  This means it needs to have nodes and edges.
+							</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Undirected Networks</h3>
+						<p>
+							Edges have no orientation or direction and the nodes are unordered.
+						</p>
+					</section>
+
+					<section>
+						<p>
+							For example, Jane is married to Ryan:
+						</p>
+							<img data-src="../img/undirectedNetwork.svg" alt="network graph" width="40%" height="40%">
+						<p>
+							is the same as: Ryan is married to Jane:
+						</p>
+						<img data-src="../img/undirectedNetwork2.svg" alt="network graph" width="40%" height="40%">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Directed Networks</h3>
+						<p>
+							Edges have direction/orientation associated with them.
+					</section>
+
+					<section>
+						The direction is often represented by arrows
+						<img data-src="../img/directedNetwork.svg" alt="network graph" width="40%" height="40%">
+					</section>
+
+					<section>
+						Examples could be international trade or in social media: mentions in tweets
+					</section>
+
+				</section>
+
+				<section>
+					<h2>Measuring Connectivity</h2>
+				</section>
+
+				<section>
+					<p>
+						When analyzing or describing a network it is helpful to understand a node's position in a network, especially how important it is in the network.  There are a couple of different measures that can be used to find them.
+					</p>
+				</section>
+
+			<section>
+				<section>
+					<h3>
+						Degree Centrality
+					</h3>
+				</section>
+
+				<section>
+					<p>
+						One way to measure the importance of a node is to count how many edges it connects to. This is called a node's <em>degree</em>.  In the network below, the number inside each node represents its degree.
+					</p>
+					<img data-src="../img/networkDegree2.svg" alt="network degree" width="40%" height="40%">
+					<aside class="notes">
+						another way to think of degree is "connectedness"
+					</aside>
+				</section>
+
+				<section>
+					<p>
+						What is the degree of the red highlighted node? (remember that this is a undirected network)
+					</p>
+					<img data-src="../img/networkDegreeQuiz.svg" alt="network graph" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>
+						2
+					</p>
+					<img data-src="../img/networkDegreeAnswer.svg" alt="network graph" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>
+						The higher a node's degree is, the higher propability it has of catching what is flowing through the network.  This can be:
+						<ul>
+							<li>Information or news threw social media</li>
+							<li>A disease spreading through a population</li>
+							<li>Files being transfered between a network of computers</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<p>For directed networks, degree is calculated a bit differently. We have to calculate the <em>indegree</em> and the <em>outdegree</em>.</p>
+					<img data-src="../img/directedNetwork.svg" alt="network graph" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>The <em>indegree</em> is the amount of edges flowing into a node.</p>
+					<img data-src="../img/indegree.svg" alt="in degree graph" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>The <em>outdegree</em> is the amount of edges flowing out of a node</p>
+					<img data-src="../img/outdegree.svg" alt="out degree graph" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>What is the the <em>indegree</em> and <em>outdegree</em> of the node highlighted in red?</p>
+					<img data-src="../img/directedDegreeQuiz.svg" alt="directed degree quiz" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p><em>Indegree:</em> 2 <br> <em>outdegree:</em> 2</p>
+					<img data-src="../img/directedDegreeAnswer.svg" alt="directed degree quiz" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>
+						However, one drawback of using degree is that it only good for understanding the local importance of a node.
+					</p>
+					<aside class="notes">
+						This is because it is only looking at the nodes and edges that immediately connect to it and thus could be missing the influence of nodes not directly connected to it.
+					</aside>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Closeness Centrality</h3>
+				</section>
+
+				<section>
+					<p>
+						Measure of the relative distance of a node to all the other nodes in the network. It is calculated by its shortest path to the other nodes.
+					</p>
+					<aside class="notes">
+						Another way to think of it is how "easy" it is to reach the other nodes
+					</aside>
+				</section>
+
+				<section>
+					<p>
+						It is often normalized to all of the possible nodes so (number of nodes in the network - 1)/The sum of all the shortests paths that node can take
+					</p>
+					<img data-src="../img/closenessCentrality.svg" alt="closeness centrality" width="40%" height="40%">
+				</section>
+
+				<section>
+					<p>
+						What is the closeness centrality of the red highlighted node? (remember that this is a undirected network)
+					</p>
+					<img data-src="../img/networkDegreeQuiz.svg" alt="network graph" width="40%" height="40%">
+				</section>
+				<section>
+					<p>
+						(6-1)/8
+					</p>
+					<img data-src="../img/networkClosenessAnswer.svg" alt="network graph" width="40%" height="40%">
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Betweeness Centrality</h3>
+				</section>
+				<section>
+				<p>
+					Measure of how often a node is the "bridge" between other nodes.  These are the nodes that have a high chance of being in a randomly selected shortest bast between two nodes.
+				</p>
+			</section>
+
+			<section>
+				<p>
+					Fraction of shortest paths that go through Node X / All the shortest Paths between all nodes
+				</p>
+				<img data-src="../img/betweenessCentrality.svg" alt="network graph" width="40%" height="40%">
+			</section>
+		</section>
+
+			<section>
+				<section>
+					<h3>Eigenvector Centrality</h3>
+				</section>
+
+				<section>
+					<p>
+						The value of a nodes connections is important
+					</p>
+					<aside class="notes">
+						"Its not what you know but who ya know"
+					</aside>
+				</section>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

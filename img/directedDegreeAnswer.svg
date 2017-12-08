@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 230.4 180" style="enable-background:new 0 0 230.4 180;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#CF2029;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:7.5872;stroke-miterlimit:10;}
+	.st4{fill:none;}
+	.st5{fill:#CF2029;}
+	.st6{font-family:'MyriadPro-Regular';}
+	.st7{font-size:16px;}
+</style>
+<circle class="st0" cx="47.7" cy="48.2" r="35.3"/>
+<circle class="st1" cx="148.1" cy="132.3" r="35.3"/>
+<g>
+	<g>
+		<line class="st1" x1="84.9" y1="86.5" x2="106" y2="103.6"/>
+		<g>
+			<polygon class="st2" points="79.9,98.5 71,75.2 95.6,79.1 			"/>
+		</g>
+		<g>
+			<polygon class="st2" points="95.3,111 119.9,114.9 111,91.6 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="97.3" y1="47.5" x2="152" y2="47.3"/>
+		<g>
+			<polygon class="st2" points="100.1,56.9 83.7,47.5 100.1,38 			"/>
+		</g>
+		<g>
+			<polygon class="st2" points="149.2,56.8 165.6,47.3 149.2,37.9 			"/>
+		</g>
+	</g>
+</g>
+<circle class="st3" cx="191.6" cy="44.7" r="26.8"/>
+<g>
+	<g>
+		<line class="st3" x1="172.5" y1="89.7" x2="181.9" y2="71.9"/>
+		<g>
+			<polygon class="st2" points="182.1,91.7 166.1,101.7 165.4,82.8 			"/>
+		</g>
+	</g>
+</g>
+<rect x="24.4" y="30.4" class="st4" width="45.6" height="37.6"/>
+<text transform="matrix(1 0 0 1 33.4841 41.789)"><tspan x="0" y="0" class="st5 st6 st7">in: 2</tspan><tspan x="-5.1" y="19.2" class="st5 st6 st7">out: 2</tspan></text>
+<rect x="125.4" y="114.9" class="st4" width="45.6" height="37.6"/>
+<text transform="matrix(1 0 0 1 134.4315 126.2634)"><tspan x="0" y="0" class="st2 st6 st7">in: 2</tspan><tspan x="-5.1" y="19.2" class="st2 st6 st7">out: 1</tspan></text>
+<rect x="169" y="27.4" class="st4" width="45.6" height="37.6"/>
+<text transform="matrix(1 0 0 1 178.0689 38.7238)"><tspan x="0" y="0" class="st2 st6 st7">in: 1</tspan><tspan x="-5.1" y="19.2" class="st2 st6 st7">out: 1</tspan></text>
+</svg>
